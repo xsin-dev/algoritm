@@ -9,18 +9,22 @@
 //       return false;
 //     }
 //   }
-//   return word.length > 0;
+//   return word
 // });
 
 // console.log(output);
 
+// const numbersFiltired = (numbersAndString) => {
+//   const filtired = numbersAndString.split(" ");
+//   const Numbers = filtired.filter((n) => n % 1 == 0);
+//   const arrNumber = Numbers.join(" ").split(" ");
+//   console.log(Numbers);
+// };
+
+// numbersFiltired("abc 123 test 4567 js");
+
 // =========================================
 // 2-topshiriq
-// So‘zlarni teskari tartibda yozish
-// Input: "hello world javascript"
-
-// Output: "olleh dlrow tpircsavaj"
-
 // const input = "hello world javascript";
 // 1-usul
 // const output = input.split("").reverse().join("")
@@ -35,4 +39,28 @@
 // console.log(output);
 
 // =============================================
+// 3-topshiriq
+// const input = "salom do'stim qandaysan"
 
+// const output = input.split(" ").map((word)=>{
+//     return word.charAt(0).toUpperCase() + word.slice(1)
+// }).join(" ")
+
+// console.log(output);
+
+//  =================================================
+// 4-topshiriq
+// const input = "hellooo world javascript";
+// const unli = "aoieuAOIEU";
+
+// const output = input.split(" ").map((word) => {
+//  let vovels = 0;
+//   for (let char of word) {
+//     if (unli.includes(char)) {
+//       vovels += 1;
+//     }
+//   }
+//   return { word: word, vovels: vovels };
+// });
+
+// console.log(output);
